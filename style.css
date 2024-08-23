@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgba(4, 18, 48, 0.705);   
+}
+
+li {
+    list-style: none;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    grid-template-rows: repeat(5, 250px);
+    
+}
+
+.header {
+    background-color: rgb(218, 255, 243);
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 0 3px 8px -2px gray;
+    z-index: 1;
+    
+}
+
+.nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(255, 255, 255);
+}
+.search-container{
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    column-gap: 10px;
+    margin-left: 2rem;
+   
+}
+form{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+.nav svg {
+    filter: invert(0%)   brightness(104%) contrast(100%);
+}
+input[type=search]{
+    width: 690px;
+
+    border-radius: 20px;
+    border: none;
+    text-indent: 10px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: rgb(220, 234, 243);
+    font-size: 25px;
+    color: rgb(45, 88, 138);
+    
+}
+input[type=search]:focus{
+    outline: none;
+    color: rgb(45, 88, 138);
+}
+.search-btn{
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.notification-btn {
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+.profile-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 40px 1fr);
+    justify-content: end;
+    margin-left: 2rem;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.profile-nav a {
+    white-space: nowrap;
+    text-decoration: none;
+    user-select: none;
+    color: rgb(0, 0, 0);
+}
+
+.profile-nav img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+.action-nav {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 3rem;
+}
+.left div{
+    display: grid;
+    align-content: center;
+    gap: 5px;
+}
+
+
+.left h1,
+.left  p{
+    font-size: 14px;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.left div h1{
+    font-size: 24px;
+    white-space: nowrap;
+  
+}
+
+
+.action-nav div img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    grid-row: span 2;
+
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    justify-content: end;
+    margin-right: 3rem;
+}
+.right button {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(98, 161, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Sidebar ////////////////////////////////////////////////// */
+
+
+.sidebar {
+    background-color: rgb(0, 132, 219);
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    min-width: 300px;
+    max-width: 100%;  
+}
+ 
+.sidebar-links-top div{
+    display: grid;
+    grid-template-columns: repeat(2, 45px);
+    grid-template-rows: repeat(6, 10%);
+    row-gap: 3px;
+    /* align-items: end; */
+    margin-left: 2rem;
+    margin-top: 1rem;
+ 
+   
+}
+.sidebar-links-top {
+   margin-top: 2rem;
+} 
+.branding,
+.sidebar-links-top div a,
+.sidebar-links-bottom div a {
+    user-select: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sidebar-links-bottom {
+    margin-top: 70px;
+}
+.sidebar-links-bottom div{
+    display: grid;
+    grid-template-columns: repeat(2, 45px);
+    grid-template-rows: repeat(6, 10%);
+    row-gap: 3px;
+    margin-left: 2rem;
+    margin-top: 1rem;   
+}
+
+
+.branding{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 15px;
+    
+}
+
+svg {
+    filter: invert(100%)   brightness(104%) contrast(100%);
+}
+
+/* Main content //////////////////////////////////////////////////////// */
+.main-content {
+    background-color: rgb(227, 241, 255);
+    grid-row: 2 / -1;
+}
